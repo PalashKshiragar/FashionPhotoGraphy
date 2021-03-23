@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+:root {
+  --navbar-height: 65px;
+}
+#logo img {
+  margin-top: 20px;
+  width: 15%;
+}
+#navbar {
+  position: relative;
+}
+#navbar ul {
+  /* align-items: center; */
+  display: flex;
+  font-weight: bolder;
+}
+#navbar ::before {
+  content: "";
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  /* z-index: -5; */
+  opacity: 0.9;
+}
+#navbar ul li {
+  display: flex;
+  list-style-type: none;
+}
+#navbar ul li a {
+  color: crimson;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Baloo Bhai 2", cursive;
+}
+#navbar ul li a:hover {
+  color: white;
+  background-color: #41584b;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f2da;
+  opacity: 0.9;
+  height: 230px;
+}
+#home h1 {
+  font-family: "Dancing Script", cursive;
+  color: #045762;
+  text-align: center;
+  font-size: 40px;
+}
+#home p {
+  font-family: "Playfair Display", serif;
+  color: #350b40;
+  font-weight: 600;
+  font-size: 1rem;
+}
+#home button {
+  border-radius: 10px;
+  background-color: #383e56;
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  color: #ffeebb;
+  font-weight: bold;
+  margin: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+.h-massive {
+  font-size: 2rem;
+  padding: 12px;
+  font-family: "Dancing Script", cursive;
+  color: #00587a;
+  background-color: #aa8976;
+  opacity: 0.9;
+}
+.center {
+  text-align: center;
+}
+#services-container {
+  margin: 34px;
+  display: flex;
+}
+#services > box {
+  border: 2px;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 25px;
+  background: cornsilk;
+}
+.h-secondary {
+  font-size: 2rem;
+  padding: 12px;
+}
+#clients {
+  display: flex;
+  content: "";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("pexel4.jpg");
+}
+#client section > h-primary {
+  background-color: lightgreen;
+  font-weight: bold;
+  font-family: monospace;
+}
+#clients img {
+  height: 150px;
+  padding: 20px;
+}
+
+.h-lightgreen {
+  font-size: 2rem;
+  padding: 2px;
+  background-color: #f14668 !important;
+  height: 100x;
+  width: 350px;
+  margin: auto;
+  font-family: "Playfair Display", serif;
+  color: #6b011f;
+  border-radius: 10px;
+}
+.project {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+
+.project .h-p {
+  margin: auto;
+  padding: 0 20px;
+}
+
+.project .img {
+  padding: 50px 0;
+  height: 400px;
+}
+
+.img img {
+  margin: 0 20%;
+  width: 60%;
+  height: 100%;
+}
+.h-p h3 {
+  font-family: "Dancing Script", cursive;
+  background-color: #f14668;
+  border-radius: 10px;
+  margin: 17px;
+  padding: 10px;
+  color: #6b011f;
+}
+.h-p p {
+  font-family: "Lobster", cursive;
+}
+footer {
+  background: #00587a;
+  color: #f3f2da;
+  padding: 9px 12px;
+}
+#contact .h-connect {
+  font-family: "Lobster", cursive;
+  background-color: darkcyan;
+  color: floralwhite;
+  border-radius: 20px;
+}
+#contactbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+  background-color: #00587a;
+}
+#contactbox form {
+  width: 30%;
+  font-family: "Lobster", cursive;
+}
+#contactbox label {
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+#Contactbox textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 900px){
+    #home{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .services-container{
+        margin-top: 50px;
+    }
+
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project .img{
+        order: 1;
+    }
+
+    .project .h-p{
+        order: 2;
+    }
+
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .clients img{
+        padding: 5px 20px;
+        width: 80%;
+        margin: auto;
+    }
+}
